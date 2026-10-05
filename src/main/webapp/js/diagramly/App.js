@@ -4128,7 +4128,13 @@ App.prototype.start = function()
 							title = this.defaultFilename;
 						}
 						
-						var serviceCount = this.getServiceCount(true);
+						if (this.isStartScreenEnabled())
+	{
+		this.showStartScreen();
+		return;
+	}
+
+	var serviceCount = this.getServiceCount(true);
 						
 						if (isLocalStorage)
 						{
@@ -4914,6 +4920,50 @@ App.prototype.showDriveAccessDialog = function(id, changeUserFn, cancelFn)
  * true, followed by the splash dialog or the home screen. Closing the splash
  * dialog creates a blank diagram.
  */
+App.prototype.isStartScreenEnabled = function()
+{
+	return urlParams['start'] == '1' &&
+		!this.editor.chromeless &&
+		urlParams['embed'] != '1' &&
+		urlParams['noFileMenu'] != '1' &&
+		!mxClient.IS_CHROMEAPP &&
+		!EditorUi.isElectronApp &&
+		this.getCurrentFile() == null;
+};
+
+/**
+ * Shows the Word-style start screen without changing the existing
+ * Google Drive HomeDialog flow. Enabled explicitly with ?start=1
+ * during the first implementation phase.
+ */
+App.prototype.showStartScreen = function()
+{
+	if (!this.isStartScreenEnabled())
+	{
+		return;
+	}
+
+	var startup = this.getCurrentFile() == null;
+	var dlg = new StartDialog(this);
+	var w = Math.max(720, Math.min(1120, window.innerWidth - 96));
+	var h = Math.max(520, Math.min(760, window.innerHeight - 96));
+
+	this.showDialog(dlg.container, w, h, true, true, mxUtils.bind(this, function(cancel, isEsc)
+	{
+		dlg.destroy();
+
+		if ((cancel || isEsc) && startup && this.getCurrentFile() == null)
+		{
+			var prev = Editor.useLocalStorage;
+			this.createFile(this.defaultFilename, null, null, null, null, null, null,
+				urlParams['local'] != '1');
+			Editor.useLocalStorage = prev;
+		}
+	}), null, null, null, true);
+
+	dlg.init();
+};
+
 App.prototype.showSplash = function(force)
 {
 	//Splash dialog shouldn't be shownn when running without a file menu
