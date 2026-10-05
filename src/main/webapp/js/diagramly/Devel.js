@@ -226,6 +226,7 @@ mxscript(drawDevUrl + 'js/diagramly/DriveFile.js');
 mxscript(drawDevUrl + 'js/diagramly/DriveLibrary.js');
 mxscript(drawDevUrl + 'js/diagramly/DriveClient.js');
 mxscript(drawDevUrl + 'js/diagramly/HomeDialog.js');
+mxscript(drawDevUrl + 'js/diagramly/StartDialog.js');
 mxscript(drawDevUrl + 'js/diagramly/DropboxFile.js');
 mxscript(drawDevUrl + 'js/diagramly/DropboxLibrary.js');
 mxscript(drawDevUrl + 'js/diagramly/DropboxClient.js');
