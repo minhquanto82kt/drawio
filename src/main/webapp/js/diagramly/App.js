@@ -4961,7 +4961,6 @@ App.prototype.showStartScreen = function()
 		}
 	}), null, null, null, true);
 
-	dlg.init();
 };
 
 App.prototype.showSplash = function(force)
@@ -4972,6 +4971,12 @@ App.prototype.showSplash = function(force)
 		return;	
 	}
 	
+	if (this.isStartScreenEnabled())
+	{
+		this.showStartScreen();
+		return;
+	}
+
 	var serviceCount = this.getServiceCount(true);
 	
 	var showSecondDialog = mxUtils.bind(this, function()
