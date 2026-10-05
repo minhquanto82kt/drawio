@@ -4070,3 +4070,104 @@ span.geCommentsBadge {
 	transform: translate(0, 0);
 	z-index: 0;
 }
+
+/* Start screen */
+.geStartDialog {
+	background: #fff;
+	color: #222;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.geStartHeader {
+	padding: 28px 36px 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.geStartTitle {
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.geStartSubtitle {
+	margin-top: 5px;
+	color: #666;
+	font-size: 14px;
+}
+
+.geStartContent {
+	padding: 24px 36px 40px;
+}
+
+.geStartSection {
+	margin: 0 0 30px;
+}
+
+.geStartSectionTitle {
+	margin: 0 0 14px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.geStartGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 14px;
+}
+
+.geStartCard {
+	display: block;
+	width: 100%;
+	min-height: 155px;
+	padding: 0;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: #fff;
+	color: inherit;
+	text-align: left;
+	cursor: pointer;
+	overflow: hidden;
+	font: inherit;
+}
+
+.geStartCard:hover {
+	border-color: #999;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.geStartCardPreview {
+	height: 110px;
+	background: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.geStartCardIcon {
+	font-size: 42px;
+	color: #777;
+}
+
+.geStartCardLabel {
+	padding: 11px 12px;
+	font-size: 13px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.geStartBlankCard {
+	max-width: 180px;
+}
+
+.geStartEmpty {
+	padding: 20px;
+	border: 1px dashed #ccc;
+	border-radius: 8px;
+	color: #777;
+	text-align: center;
+}
