@@ -58,6 +58,39 @@ StartDialog.prototype.build = function()
 	newSection.appendChild(blank);
 	content.appendChild(newSection);
 
+	// Open
+	var openSection = this.createSection(
+		mxResources.get('open', null, 'Open')
+	);
+
+	var openGrid = document.createElement('div');
+	openGrid.className = 'geStartGrid';
+
+	var googleCard = this.createCard(
+		'☁',
+		mxResources.get('googleDrive', null, 'Google Drive'),
+		mxUtils.bind(this, function()
+		{
+			ui.hideDialog();
+			ui.pickFile(App.MODE_GOOGLE);
+		})
+	);
+	openGrid.appendChild(googleCard);
+
+	var deviceCard = this.createCard(
+		'▣',
+		mxResources.get('device', null, 'This device'),
+		mxUtils.bind(this, function()
+		{
+			ui.hideDialog();
+			ui.pickFile(App.MODE_DEVICE);
+		})
+	);
+	openGrid.appendChild(deviceCard);
+
+	openSection.appendChild(openGrid);
+	content.appendChild(openSection);
+
 	// Recent
 	var recentSection = this.createSection(
 		mxResources.get('recent', null, 'Recent')
