@@ -267,6 +267,11 @@ StartDialog.prototype.openRecent = function(entry)
 	}
 };
 
+StartDialog.prototype.init = function()
+{
+	// UI is built in the constructor.
+};
+
 StartDialog.prototype.destroy = function()
 {
 	if (this.container != null && this.container.parentNode != null)
