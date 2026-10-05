@@ -4128,13 +4128,7 @@ App.prototype.start = function()
 							title = this.defaultFilename;
 						}
 						
-						if (this.isStartScreenEnabled())
-	{
-		this.showStartScreen();
-		return;
-	}
-
-	var serviceCount = this.getServiceCount(true);
+						var serviceCount = this.getServiceCount(true);
 						
 						if (isLocalStorage)
 						{
@@ -4922,12 +4916,19 @@ App.prototype.showDriveAccessDialog = function(id, changeUserFn, cancelFn)
  */
 App.prototype.isStartScreenEnabled = function()
 {
-	return urlParams['start'] == '1' &&
+	var hasHash = window.location.hash != null && window.location.hash.length > 1;
+
+	return urlParams['start'] != '0' &&
+		urlParams['splash'] != '0' &&
 		!this.editor.chromeless &&
 		urlParams['embed'] != '1' &&
 		urlParams['noFileMenu'] != '1' &&
 		!mxClient.IS_CHROMEAPP &&
 		!EditorUi.isElectronApp &&
+		!hasHash &&
+		urlParams['open'] == null &&
+		urlParams['create'] == null &&
+		urlParams['state'] == null &&
 		this.getCurrentFile() == null;
 };
 
@@ -4943,24 +4944,15 @@ App.prototype.showStartScreen = function()
 		return;
 	}
 
-	var startup = this.getCurrentFile() == null;
-	var dlg = new StartDialog(this);
-	var w = Math.max(720, Math.min(1120, window.innerWidth - 96));
-	var h = Math.max(520, Math.min(760, window.innerHeight - 96));
-
-	this.showDialog(dlg.container, w, h, true, true, mxUtils.bind(this, function(cancel, isEsc)
+	if (this.startDialog != null && this.startDialog.container != null)
 	{
-		dlg.destroy();
+		return;
+	}
 
-		if ((cancel || isEsc) && startup && this.getCurrentFile() == null)
-		{
-			var prev = Editor.useLocalStorage;
-			this.createFile(this.defaultFilename, null, null, null, null, null, null,
-				urlParams['local'] != '1');
-			Editor.useLocalStorage = prev;
-		}
-	}), null, null, null, true);
-
+	this.startDialog = new StartDialog(this);
+	document.body.classList.add('geStartScreenOpen');
+	document.body.appendChild(this.startDialog.container);
+	this.startDialog.init();
 };
 
 App.prototype.showSplash = function(force)
