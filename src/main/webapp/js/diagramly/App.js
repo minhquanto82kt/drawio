@@ -4934,8 +4934,8 @@ App.prototype.isStartScreenEnabled = function()
 
 /**
  * Shows the Word-style start screen without changing the existing
- * Google Drive HomeDialog flow. Enabled explicitly with ?start=1
- * during the first implementation phase.
+ * Google Drive HomeDialog flow. Enabled by default on a clean launch;
+ * use ?start=0 to bypass it for direct editor testing.
  */
 App.prototype.showStartScreen = function()
 {
