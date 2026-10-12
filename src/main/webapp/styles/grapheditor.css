@@ -1,75 +1,77 @@
+/* The Matrix (1999) — five-color interface palette
+ * #EEEEEE · #0B0909 · #1A312C · #253900 · #08CB00
+ */
 :root {
-	--ge-panel-color: #f1f3f4;
-	--toolbar-color: #f1f3f4;
-	--workspace-color: #ececec;
-	--dark-toolbar-color: #1e2022;
+	--ge-panel-color: #EEEEEE;
+	--toolbar-color: #EEEEEE;
+	--workspace-color: #EEEEEE;
+	--dark-toolbar-color: #0B0909;
 	--inactive-color: #e4e4e4;
 	--active-color: #c4c4c4;
-	--primary-color: #c2e7ff;
-	--primary-hover-color: #abcfe7;
-	--accent-color: #e1e9f7;
-	--accent-hover-color: #d8e5f8;
-	--accent-text-color: #0b57d0;
-	--border-color: #dadada;
-	--highlight-color: #e2e2e2;
-	--scrollbar-hover-color: #959798;
-	--text-color: #3F3F3F;
-	--dark-color: #121212;
-	--ge-dark-panel-color: #1B1D1E;
-	--dark-border-color: #333333;
-	--dark-text-color: #C0C0C0;
-	--dark-accent-color: #003555;
-	--dark-accent-text-color: #52a5f6;
-	--dark-active-accent-color: #004A77;
-	--dark-inverse-active-color: #c4c4c4;
-	--dark-highlight-color: #000000;
-	--dark-header-color: #1B1D1E;
+	--primary-color: #1A312C;
+	--primary-hover-color: #253900;
+	--accent-color: #1A312C;
+	--accent-hover-color: #253900;
+	--accent-text-color: #253900;
+	--border-color: #c8cec9;
+	--highlight-color: #dce4dd;
+	--scrollbar-hover-color: #253900;
+	--text-color: #0B0909;
+	--dark-color: #0B0909;
+	--ge-dark-panel-color: #1A312C;
+	--dark-border-color: #253900;
+	--dark-text-color: #EEEEEE;
+	--dark-accent-color: #253900;
+	--dark-accent-text-color: #08CB00;
+	--dark-active-accent-color: #253900;
+	--dark-inverse-active-color: #EEEEEE;
+	--dark-highlight-color: #0B0909;
+	--dark-header-color: #0B0909;
 	/* Dialogs, windows and comments */
-	--dialog-color: #f0f0f0;
-	--dark-dialog-color: #2a2a2a;
-	--strong-text-color: #1d1d1f;
-	--dark-strong-text-color: #e5e5e7;
-	--secondary-text-color: #6e6e73;
-	--dark-secondary-text-color: #a0a0a0;
-	--faint-text-color: #8e8e93;
-	--dark-faint-text-color: #7a7a7e;
+	--dialog-color: #EEEEEE;
+	--dark-dialog-color: #0B0909;
+	--strong-text-color: #0B0909;
+	--dark-strong-text-color: #EEEEEE;
+	--secondary-text-color: #414b45;
+	--dark-secondary-text-color: #c3d0c7;
+	--faint-text-color: #66736b;
+	--dark-faint-text-color: #aab8ae;
 	/* Input fields, cards and chips */
-	--field-color: #ffffff;
-	--dark-field-color: #1c1c1e;
-	--field-border-color: #d2d2d7;
-	--dark-field-border-color: #48484a;
-	--strong-border-color: #b9b9be;
-	--dark-strong-border-color: #5a5a5e;
-	--card-color: #ffffff;
-	--dark-card-color: #2c2c2e;
-	--soft-color: whitesmoke;
-	--dark-soft-color: #3a3a3c;
-	--soft-hover-color: #f0f0f2;
-	--dark-soft-hover-color: #3a3a3c;
+	--field-color: #EEEEEE;
+	--dark-field-color: #1A312C;
+	--field-border-color: #c8cec9;
+	--dark-field-border-color: #253900;
+	--strong-border-color: #aeb8b0;
+	--dark-strong-border-color: #253900;
+	--card-color: #EEEEEE;
+	--dark-card-color: #1A312C;
+	--soft-color: #e4e8e4;
+	--dark-soft-color: #253900;
+	--soft-hover-color: #dce4dd;
+	--dark-soft-hover-color: #253900;
 	/* Accents (selected and focused states) */
-	--focus-color: #0071e3;
-	--dark-focus-color: #0a84ff;
-	--mention-color: #0a4bb0;
-	--dark-mention-color: #7eb1ff;
-	--mention-background-color: #e8f0fe;
-	--dark-mention-background-color: #10325f;
-	--selected-color: #d4e4f7;
-	--selected-hover-color: #c4d8f0;
-	--active-item-color: lightgray;
-	--dark-active-item-color: darkgray;
+	--focus-color: #1A312C;
+	--dark-focus-color: #08CB00;
+	--mention-color: #253900;
+	--dark-mention-color: #08CB00;
+	--mention-background-color: #dce4dd;
+	--dark-mention-background-color: #0B0909;
+	--selected-color: #dce4dd;
+	--selected-hover-color: #c8d7ca;
+	--active-item-color: #c4c4c4;
+	--dark-active-item-color: #253900;
 	/* Status */
 	--error-color: #b62623;
-	--dark-error-color: #ffffff;
+	--dark-error-color: #EEEEEE;
 	--error-background-color: #eacccc;
 	--dark-error-background-color: #a20025;
 	/* Misc */
-	--scrollbar-color: #e2e2e2;
-	--dark-scrollbar-color: #2c2c2c;
-	--prop-stripe-color: #fcfcfc;
-	--prop-accent-color: #D9E1F2;
-	--prop-accent-text-color: #305496;
+	--scrollbar-color: #dce4dd;
+	--dark-scrollbar-color: #253900;
+	--prop-stripe-color: #f7f8f7;
+	--prop-accent-color: #dce4dd;
+	--prop-accent-text-color: #1A312C;
 }
-
 .geEditor * {
 	forced-color-adjust: none;
 }
@@ -235,7 +237,7 @@ div[id*="dgeMermaidOutput-"] {
 	width: 32px;
 	height: 36px;
 	border-radius: 4px;
-	background-color: rgb(240, 135, 5);
+	background-color: #08CB00;
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: 0.1s linear;
