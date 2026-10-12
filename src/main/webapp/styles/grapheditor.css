@@ -4537,3 +4537,52 @@ body.geStartScreenOpen {
 	.geStartTemplateGrid { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
 	.geStartTopSearch { display: none; }
 }
+
+
+/* The Matrix (1999) — finish palette application for hard-coded UI surfaces */
+.geAtlas .geMenubarContainer:not(.geDarkMode *),
+.geAtlas .gePrimaryBtn.geEmbedBtn:not(.geDarkMode *) {
+	background-color: #1A312C !important;
+	color: #EEEEEE !important;
+}
+.geAtlas .gePrimaryBtn.geEmbedBtn:hover:not(.geDarkMode *, [disabled]) {
+	background-color: #253900 !important;
+}
+.geAtlas .geMenubarContainer .geItem:hover:not(.geDarkMode *) {
+	background-color: #253900 !important;
+}
+.geStartDialog {
+	background: #0B0909;
+	color: #EEEEEE;
+}
+.geStartTopbar { background: #0B0909; border-bottom-color: #1A312C; }
+.geStartBrandMark { background: #08CB00; color: #0B0909; }
+.geStartTopButton { color: #EEEEEE; }
+.geStartTopButton:hover { background: #253900; color: #EEEEEE; }
+.geStartSidebar { background: #1A312C; border-right-color: #253900; }
+.geStartSidebarTitle, .geStartSidebarFooter { color: #c3d0c7; }
+.geStartNavItem { color: #EEEEEE; }
+.geStartNavItem:hover, .geStartNavActive { background: #253900; color: #EEEEEE; }
+.geStartNavIcon { color: #08CB00; }
+.geStartSidebarDivider { background: #253900; }
+.geStartMain { background: #0B0909; }
+.geStartHero h1, .geStartSectionTitle { color: #EEEEEE; }
+.geStartHero p, .geStartActionCopy span { color: #c3d0c7; }
+.geStartSearch { background: #1A312C; border-color: #253900; }
+.geStartSearch:focus-within { border-color: #08CB00; }
+.geStartSearchIcon { color: #08CB00; }
+.geStartSearch input { color: #EEEEEE; }
+.geStartActionCard { background: #1A312C; border-color: #253900; color: #EEEEEE; }
+.geStartActionCard:hover { background: #253900; border-color: #08CB00; }
+.geStartActionCard.primary { background: #253900; border-color: #08CB00; }
+.geStartActionIcon, .geStartActionCard.primary .geStartActionIcon { background: #0B0909; color: #08CB00; }
+.geStartSuggestion { background: #1A312C; border-color: #253900; }
+.geStartSuggestionIcon { background: #0B0909; color: #08CB00; }
+.geStartRecentCard, .geStartTemplateCard { background: #1A312C; border-color: #253900; color: #EEEEEE; }
+.geStartRecentCard:hover, .geStartTemplateCard:hover { background: #253900; border-color: #08CB00; }
+.geStartRecentPreview { background: linear-gradient(#253900 1px, transparent 1px), linear-gradient(90deg, #253900 1px, transparent 1px), #0B0909; background-size: 16px 16px; }
+.geStartPreviewLine { background: #08CB00; }
+.geStartTemplatePreview { background: #EEEEEE; }
+.geStartMiniShape { border-color: #1A312C; background: #EEEEEE; }
+.geStartMiniShape1::after, .geStartMiniShape2::after { background: #08CB00; }
+.geStartEmpty { border-color: #253900; color: #c3d0c7; }
