@@ -331,8 +331,18 @@ else
         {
             mxscript('js/app.min.js', function()
             {
-                mxScriptsLoaded = true;
-                checkAllLoaded();
+                // Load the custom start screen after the existing editor bundle.
+                // This keeps Google Drive and the rest of app.min.js untouched.
+                mxscript('js/diagramly/StartDialog.js', function()
+                {
+                    mxScriptsLoaded = true;
+                    checkAllLoaded();
+                }, null, null, false, function()
+                {
+                    // A missing optional screen must never block the editor.
+                    mxScriptsLoaded = true;
+                    checkAllLoaded();
+                });
                 
                 // Electron
                 if (mxIsElectron)

@@ -4914,6 +4914,47 @@ App.prototype.showDriveAccessDialog = function(id, changeUserFn, cancelFn)
  * true, followed by the splash dialog or the home screen. Closing the splash
  * dialog creates a blank diagram.
  */
+App.prototype.isStartScreenEnabled = function()
+{
+	var hasHash = window.location.hash != null && window.location.hash.length > 1;
+
+	return urlParams['start'] != '0' &&
+		urlParams['splash'] != '0' &&
+		!this.editor.chromeless &&
+		urlParams['embed'] != '1' &&
+		urlParams['noFileMenu'] != '1' &&
+		!mxClient.IS_CHROMEAPP &&
+		!EditorUi.isElectronApp &&
+		!hasHash &&
+		urlParams['open'] == null &&
+		urlParams['create'] == null &&
+		urlParams['state'] == null &&
+		this.getCurrentFile() == null;
+};
+
+/**
+ * Shows the Word-style start screen without changing the existing
+ * Google Drive HomeDialog flow. Enabled by default on a clean launch;
+ * use ?start=0 to bypass it for direct editor testing.
+ */
+App.prototype.showStartScreen = function()
+{
+	if (!this.isStartScreenEnabled())
+	{
+		return;
+	}
+
+	if (this.startDialog != null && this.startDialog.container != null)
+	{
+		return;
+	}
+
+	this.startDialog = new StartDialog(this);
+	document.body.classList.add('geStartScreenOpen');
+	document.body.appendChild(this.startDialog.container);
+	this.startDialog.init();
+};
+
 App.prototype.showSplash = function(force)
 {
 	//Splash dialog shouldn't be shownn when running without a file menu
@@ -4922,6 +4963,12 @@ App.prototype.showSplash = function(force)
 		return;	
 	}
 	
+	if (this.isStartScreenEnabled())
+	{
+		this.showStartScreen();
+		return;
+	}
+
 	var serviceCount = this.getServiceCount(true);
 	
 	var showSecondDialog = mxUtils.bind(this, function()

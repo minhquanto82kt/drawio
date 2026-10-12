@@ -575,6 +575,7 @@ OUTPUT FILES (in src/main/webapp/js/):
 				<file name="DriveLibrary.js" />
 				<file name="DriveClient.js" />
 				<file name="HomeDialog.js" />
+				<file name="StartDialog.js" />
 				<file name="DropboxFile.js" />
 				<file name="DropboxLibrary.js" />
 				<file name="DropboxClient.js" />

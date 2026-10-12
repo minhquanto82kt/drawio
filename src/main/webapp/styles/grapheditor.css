@@ -1,75 +1,77 @@
+/* The Matrix (1999) — five-color interface palette
+ * #EEEEEE · #0B0909 · #1A312C · #253900 · #08CB00
+ */
 :root {
-	--ge-panel-color: #f1f3f4;
-	--toolbar-color: #f1f3f4;
-	--workspace-color: #ececec;
-	--dark-toolbar-color: #1e2022;
+	--ge-panel-color: #EEEEEE;
+	--toolbar-color: #EEEEEE;
+	--workspace-color: #EEEEEE;
+	--dark-toolbar-color: #0B0909;
 	--inactive-color: #e4e4e4;
 	--active-color: #c4c4c4;
-	--primary-color: #c2e7ff;
-	--primary-hover-color: #abcfe7;
-	--accent-color: #e1e9f7;
-	--accent-hover-color: #d8e5f8;
-	--accent-text-color: #0b57d0;
-	--border-color: #dadada;
-	--highlight-color: #e2e2e2;
-	--scrollbar-hover-color: #959798;
-	--text-color: #3F3F3F;
-	--dark-color: #121212;
-	--ge-dark-panel-color: #1B1D1E;
-	--dark-border-color: #333333;
-	--dark-text-color: #C0C0C0;
-	--dark-accent-color: #003555;
-	--dark-accent-text-color: #52a5f6;
-	--dark-active-accent-color: #004A77;
-	--dark-inverse-active-color: #c4c4c4;
-	--dark-highlight-color: #000000;
-	--dark-header-color: #1B1D1E;
+	--primary-color: #1A312C;
+	--primary-hover-color: #253900;
+	--accent-color: #1A312C;
+	--accent-hover-color: #253900;
+	--accent-text-color: #253900;
+	--border-color: #c8cec9;
+	--highlight-color: #dce4dd;
+	--scrollbar-hover-color: #253900;
+	--text-color: #0B0909;
+	--dark-color: #0B0909;
+	--ge-dark-panel-color: #1A312C;
+	--dark-border-color: #253900;
+	--dark-text-color: #EEEEEE;
+	--dark-accent-color: #253900;
+	--dark-accent-text-color: #08CB00;
+	--dark-active-accent-color: #253900;
+	--dark-inverse-active-color: #EEEEEE;
+	--dark-highlight-color: #0B0909;
+	--dark-header-color: #0B0909;
 	/* Dialogs, windows and comments */
-	--dialog-color: #f0f0f0;
-	--dark-dialog-color: #2a2a2a;
-	--strong-text-color: #1d1d1f;
-	--dark-strong-text-color: #e5e5e7;
-	--secondary-text-color: #6e6e73;
-	--dark-secondary-text-color: #a0a0a0;
-	--faint-text-color: #8e8e93;
-	--dark-faint-text-color: #7a7a7e;
+	--dialog-color: #EEEEEE;
+	--dark-dialog-color: #0B0909;
+	--strong-text-color: #0B0909;
+	--dark-strong-text-color: #EEEEEE;
+	--secondary-text-color: #414b45;
+	--dark-secondary-text-color: #c3d0c7;
+	--faint-text-color: #66736b;
+	--dark-faint-text-color: #aab8ae;
 	/* Input fields, cards and chips */
-	--field-color: #ffffff;
-	--dark-field-color: #1c1c1e;
-	--field-border-color: #d2d2d7;
-	--dark-field-border-color: #48484a;
-	--strong-border-color: #b9b9be;
-	--dark-strong-border-color: #5a5a5e;
-	--card-color: #ffffff;
-	--dark-card-color: #2c2c2e;
-	--soft-color: whitesmoke;
-	--dark-soft-color: #3a3a3c;
-	--soft-hover-color: #f0f0f2;
-	--dark-soft-hover-color: #3a3a3c;
+	--field-color: #EEEEEE;
+	--dark-field-color: #1A312C;
+	--field-border-color: #c8cec9;
+	--dark-field-border-color: #253900;
+	--strong-border-color: #aeb8b0;
+	--dark-strong-border-color: #253900;
+	--card-color: #EEEEEE;
+	--dark-card-color: #1A312C;
+	--soft-color: #e4e8e4;
+	--dark-soft-color: #253900;
+	--soft-hover-color: #dce4dd;
+	--dark-soft-hover-color: #253900;
 	/* Accents (selected and focused states) */
-	--focus-color: #0071e3;
-	--dark-focus-color: #0a84ff;
-	--mention-color: #0a4bb0;
-	--dark-mention-color: #7eb1ff;
-	--mention-background-color: #e8f0fe;
-	--dark-mention-background-color: #10325f;
-	--selected-color: #d4e4f7;
-	--selected-hover-color: #c4d8f0;
-	--active-item-color: lightgray;
-	--dark-active-item-color: darkgray;
+	--focus-color: #1A312C;
+	--dark-focus-color: #08CB00;
+	--mention-color: #253900;
+	--dark-mention-color: #08CB00;
+	--mention-background-color: #dce4dd;
+	--dark-mention-background-color: #0B0909;
+	--selected-color: #dce4dd;
+	--selected-hover-color: #c8d7ca;
+	--active-item-color: #c4c4c4;
+	--dark-active-item-color: #253900;
 	/* Status */
 	--error-color: #b62623;
-	--dark-error-color: #ffffff;
+	--dark-error-color: #EEEEEE;
 	--error-background-color: #eacccc;
 	--dark-error-background-color: #a20025;
 	/* Misc */
-	--scrollbar-color: #e2e2e2;
-	--dark-scrollbar-color: #2c2c2c;
-	--prop-stripe-color: #fcfcfc;
-	--prop-accent-color: #D9E1F2;
-	--prop-accent-text-color: #305496;
+	--scrollbar-color: #dce4dd;
+	--dark-scrollbar-color: #253900;
+	--prop-stripe-color: #f7f8f7;
+	--prop-accent-color: #dce4dd;
+	--prop-accent-text-color: #1A312C;
 }
-
 .geEditor * {
 	forced-color-adjust: none;
 }
@@ -235,7 +237,7 @@ div[id*="dgeMermaidOutput-"] {
 	width: 32px;
 	height: 36px;
 	border-radius: 4px;
-	background-color: rgb(240, 135, 5);
+	background-color: #08CB00;
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: 0.1s linear;
@@ -4070,3 +4072,517 @@ span.geCommentsBadge {
 	transform: translate(0, 0);
 	z-index: 0;
 }
+
+/* Start screen - Photoshop-style workspace */
+.geStartDialog {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background: #222;
+	color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+body.geStartScreenOpen {
+	overflow: hidden !important;
+}
+
+.geStartTopbar {
+	height: 56px;
+	min-height: 56px;
+	display: flex;
+	align-items: center;
+	padding: 0 18px;
+	box-sizing: border-box;
+	background: #181818;
+	border-bottom: 1px solid #343434;
+}
+
+.geStartBrand {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	font-size: 18px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.geStartBrandMark {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+	background: #eee;
+	color: #202020;
+	font-size: 11px;
+}
+
+.geStartTopSearch {
+	margin-left: 34px;
+	font-size: 11px;
+	color: #777;
+}
+
+.geStartTopActions {
+	margin-left: auto;
+	display: flex;
+	gap: 6px;
+}
+
+.geStartTopButton {
+	width: 34px;
+	height: 32px;
+	border: 0;
+	border-radius: 6px;
+	background: transparent;
+	color: #bbb;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.geStartTopButton:hover {
+	background: #303030;
+	color: #fff;
+}
+
+.geStartCloseButton {
+	font-size: 23px;
+}
+
+.geStartBody {
+	display: flex;
+	flex: 1;
+	min-height: 0;
+	overflow: hidden;
+}
+
+.geStartSidebar {
+	position: relative;
+	width: 220px;
+	min-width: 220px;
+	padding: 22px 14px 16px;
+	box-sizing: border-box;
+	background: #202020;
+	border-right: 1px solid #343434;
+	display: flex;
+	flex-direction: column;
+}
+
+.geStartSidebarTitle {
+	padding: 0 12px 12px;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: .8px;
+	text-transform: uppercase;
+	color: #777;
+}
+
+.geStartNavItem {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 0 12px;
+	box-sizing: border-box;
+	border: 0;
+	border-radius: 7px;
+	background: transparent;
+	color: #aaa;
+	font-size: 13px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.geStartNavItem:hover,
+.geStartNavActive {
+	background: #343434;
+	color: #fff;
+}
+
+.geStartNavIcon {
+	width: 19px;
+	text-align: center;
+	font-size: 16px;
+	color: #999;
+}
+
+.geStartSidebarDivider {
+	height: 1px;
+	margin: 14px 9px;
+	background: #363636;
+}
+
+.geStartSidebarFooter {
+	margin-top: auto;
+	padding: 14px 12px 0;
+	font-size: 10px;
+	line-height: 1.4;
+	color: #5f5f5f;
+}
+
+.geStartMain {
+	flex: 1;
+	min-width: 0;
+	overflow: auto;
+	padding: 0 46px 70px;
+	box-sizing: border-box;
+	background: #242424;
+}
+
+.geStartHero {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 42px 0 25px;
+}
+
+.geStartHero h1 {
+	margin: 0;
+	font-size: 29px;
+	font-weight: 500;
+	letter-spacing: -.4px;
+	color: #f5f5f5;
+}
+
+.geStartHero p {
+	margin: 8px 0 20px;
+	font-size: 13px;
+	color: #999;
+}
+
+.geStartSearch {
+	width: min(650px, 100%);
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 13px;
+	box-sizing: border-box;
+	border: 1px solid #444;
+	border-radius: 7px;
+	background: #2c2c2c;
+}
+
+.geStartSearch:focus-within {
+	border-color: #666;
+}
+
+.geStartSearchIcon {
+	margin-right: 9px;
+	font-size: 20px;
+	color: #999;
+}
+
+.geStartSearch input {
+	flex: 1;
+	min-width: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: #eee;
+	font-size: 12px;
+}
+
+.geStartSearch input::placeholder {
+	color: #777;
+}
+
+.geStartSection {
+	max-width: 1060px;
+	margin: 0 auto 30px;
+}
+
+.geStartSectionTitle {
+	margin: 0 0 13px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #e8e8e8;
+}
+
+.geStartActionGrid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(190px, 1fr));
+	gap: 12px;
+}
+
+.geStartActionCard {
+	min-height: 104px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 17px;
+	box-sizing: border-box;
+	border: 1px solid #3b3b3b;
+	border-radius: 9px;
+	background: #2c2c2c;
+	color: #eee;
+	text-align: left;
+	cursor: pointer;
+}
+
+.geStartActionCard:hover {
+	background: #323232;
+	border-color: #5a5a5a;
+	transform: translateY(-1px);
+}
+
+.geStartActionCard.primary {
+	background: #304052;
+	border-color: #536d89;
+}
+
+.geStartActionIcon {
+	width: 46px;
+	height: 46px;
+	flex: 0 0 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	background: #3b3b3b;
+	font-size: 25px;
+	color: #eee;
+}
+
+.geStartActionCard.primary .geStartActionIcon {
+	background: #536d89;
+}
+
+.geStartActionCopy {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	min-width: 0;
+}
+
+.geStartActionCopy strong {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.geStartActionCopy span {
+	font-size: 11px;
+	line-height: 1.4;
+	color: #999;
+}
+
+.geStartSuggestion {
+	max-width: 1060px;
+	min-height: 64px;
+	margin: 0 auto 33px;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	padding: 12px 15px;
+	box-sizing: border-box;
+	border: 1px solid #383838;
+	border-radius: 8px;
+	background: #292929;
+}
+
+.geStartSuggestionIcon {
+	width: 34px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 7px;
+	background: #383838;
+	color: #ddd;
+}
+
+.geStartSuggestionText {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.geStartSuggestionText strong {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.geStartSuggestionText span {
+	font-size: 11px;
+	color: #888;
+}
+
+.geStartRecentGrid,
+.geStartTemplateGrid {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(125px, 1fr));
+	gap: 12px;
+}
+
+.geStartRecentCard,
+.geStartTemplateCard {
+	padding: 0;
+	border: 1px solid #393939;
+	border-radius: 8px;
+	background: #292929;
+	color: #eee;
+	overflow: hidden;
+	text-align: left;
+	cursor: pointer;
+}
+
+.geStartRecentCard:hover,
+.geStartTemplateCard:hover {
+	border-color: #606060;
+	background: #303030;
+	transform: translateY(-1px);
+}
+
+.geStartRecentPreview {
+	position: relative;
+	height: 92px;
+	background:
+	linear-gradient(#303030 1px, transparent 1px),
+	linear-gradient(90deg, #303030 1px, transparent 1px),
+	#242424;
+	background-size: 16px 16px;
+	overflow: hidden;
+}
+
+.geStartPreviewLine {
+	position: absolute;
+	height: 6px;
+	border-radius: 3px;
+	background: #858585;
+}
+
+.geStartPreviewLine.line1 { width: 34%; top: 26px; left: 16%; }
+.geStartPreviewLine.line2 { width: 45%; top: 46px; left: 29%; }
+.geStartPreviewLine.line3 { width: 26%; top: 66px; left: 42%; }
+
+.geStartRecentLabel,
+.geStartTemplateLabel {
+	padding: 10px 11px;
+	font-size: 11px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.geStartTemplatePreview {
+	position: relative;
+	height: 112px;
+	background: #ededed;
+	overflow: hidden;
+}
+
+.geStartMiniShape {
+	position: absolute;
+	box-sizing: border-box;
+	width: 38px;
+	height: 25px;
+	border: 2px solid #777;
+	background: rgba(255,255,255,.8);
+}
+
+.geStartMiniShape1 { left: 16%; top: 26px; }
+.geStartMiniShape2 { right: 16%; top: 52px; width: 48px; }
+.geStartMiniShape3 { left: 43%; top: 70px; width: 30px; height: 19px; }
+
+.geStartMiniShape1::after,
+.geStartMiniShape2::after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	width: 22px;
+	height: 1px;
+	background: #999;
+}
+
+.geStartPreview-network .geStartMiniShape {
+	border-radius: 50%;
+}
+
+.geStartPreview-uml .geStartMiniShape,
+.geStartPreview-er .geStartMiniShape {
+	border-radius: 3px;
+}
+
+.geStartEmpty {
+	grid-column: 1 / -1;
+	padding: 23px;
+	border: 1px dashed #444;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 11px;
+	color: #777;
+}
+
+@media (max-width: 1000px) {
+	.geStartSidebar { width: 190px; min-width: 190px; }
+	.geStartMain { padding-left: 28px; padding-right: 28px; }
+	.geStartActionGrid { grid-template-columns: 1fr; }
+	.geStartRecentGrid,
+	.geStartTemplateGrid { grid-template-columns: repeat(3, minmax(125px, 1fr)); }
+}
+
+@media (max-width: 700px) {
+	.geStartSidebar { display: none; }
+	.geStartMain { padding-left: 18px; padding-right: 18px; }
+	.geStartRecentGrid,
+	.geStartTemplateGrid { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+	.geStartTopSearch { display: none; }
+}
+
+
+/* The Matrix (1999) — finish palette application for hard-coded UI surfaces */
+.geAtlas .geMenubarContainer:not(.geDarkMode *),
+.geAtlas .gePrimaryBtn.geEmbedBtn:not(.geDarkMode *) {
+	background-color: #1A312C !important;
+	color: #EEEEEE !important;
+}
+.geAtlas .gePrimaryBtn.geEmbedBtn:hover:not(.geDarkMode *, [disabled]) {
+	background-color: #253900 !important;
+}
+.geAtlas .geMenubarContainer .geItem:hover:not(.geDarkMode *) {
+	background-color: #253900 !important;
+}
+.geStartDialog {
+	background: #0B0909;
+	color: #EEEEEE;
+}
+.geStartTopbar { background: #0B0909; border-bottom-color: #1A312C; }
+.geStartBrandMark { background: #08CB00; color: #0B0909; }
+.geStartTopButton { color: #EEEEEE; }
+.geStartTopButton:hover { background: #253900; color: #EEEEEE; }
+.geStartSidebar { background: #1A312C; border-right-color: #253900; }
+.geStartSidebarTitle, .geStartSidebarFooter { color: #c3d0c7; }
+.geStartNavItem { color: #EEEEEE; }
+.geStartNavItem:hover, .geStartNavActive { background: #253900; color: #EEEEEE; }
+.geStartNavIcon { color: #08CB00; }
+.geStartSidebarDivider { background: #253900; }
+.geStartMain { background: #0B0909; }
+.geStartHero h1, .geStartSectionTitle { color: #EEEEEE; }
+.geStartHero p, .geStartActionCopy span { color: #c3d0c7; }
+.geStartSearch { background: #1A312C; border-color: #253900; }
+.geStartSearch:focus-within { border-color: #08CB00; }
+.geStartSearchIcon { color: #08CB00; }
+.geStartSearch input { color: #EEEEEE; }
+.geStartActionCard { background: #1A312C; border-color: #253900; color: #EEEEEE; }
+.geStartActionCard:hover { background: #253900; border-color: #08CB00; }
+.geStartActionCard.primary { background: #253900; border-color: #08CB00; }
+.geStartActionIcon, .geStartActionCard.primary .geStartActionIcon { background: #0B0909; color: #08CB00; }
+.geStartSuggestion { background: #1A312C; border-color: #253900; }
+.geStartSuggestionIcon { background: #0B0909; color: #08CB00; }
+.geStartRecentCard, .geStartTemplateCard { background: #1A312C; border-color: #253900; color: #EEEEEE; }
+.geStartRecentCard:hover, .geStartTemplateCard:hover { background: #253900; border-color: #08CB00; }
+.geStartRecentPreview { background: linear-gradient(#253900 1px, transparent 1px), linear-gradient(90deg, #253900 1px, transparent 1px), #0B0909; background-size: 16px 16px; }
+.geStartPreviewLine { background: #08CB00; }
+.geStartTemplatePreview { background: #EEEEEE; }
+.geStartMiniShape { border-color: #1A312C; background: #EEEEEE; }
+.geStartMiniShape1::after, .geStartMiniShape2::after { background: #08CB00; }
+.geStartEmpty { border-color: #253900; color: #c3d0c7; }
